@@ -1,0 +1,17 @@
+[project]
+name = "xei-api"
+version = "0.1.0"
+description = "XEI Emotion Intelligence — FastAPI backend for emotion-aware AI services"
+requires-python = ">=3.11"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+src = ["app", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
